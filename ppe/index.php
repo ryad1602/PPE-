@@ -124,9 +124,9 @@
 				<p>930$</p>
 			</div>
 			<div class="col3">
-				<img src="images/dproduit4.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
+				<img src="images/Portes de placard platine et noir.jpg" alt="dernierprod">
+				<h3>Portes placard platine et noir</h3>
+				<p>299 $</p>
 			</div>
 		</div>
 
