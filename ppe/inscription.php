@@ -1,5 +1,5 @@
 <?php
-$bdd= new PDO('mysql:host=localhost;dbname=espace_membre', 'ryad', 'ryad' );
+$bdd= new PDO('mysql:host=localhost;dbname=espace_membre', 'root', '' );
 	if(isset($_POST['forminscription'])) {
    $pseudo = htmlspecialchars($_POST['pseudo']);
    $mail = htmlspecialchars($_POST['mail']);
@@ -59,12 +59,12 @@ $bdd= new PDO('mysql:host=localhost;dbname=espace_membre', 'ryad', 'ryad' );
                
                <li><a href="">A propos</a></li>
                
-               <li><a href="">Contact</a></li>
+               <li><a href="contact.php">Contact</a></li>
                
                <li><a href="connexion.php">Compte</a></li>
                
             </ul>
-            <img src=".\images\panier.png" alt="image2" width="26px">
+           <a href="index2.php"><img src=".\images\panier.png" alt="image2" width="26px"></a>
          </nav>
          
       
