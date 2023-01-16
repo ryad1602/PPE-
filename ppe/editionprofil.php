@@ -1,7 +1,7 @@
 	<?php
 session_start();
  
-$bdd = new PDO('mysql:host=127.0.0.1;dbname=espace_membre', 'root', '');
+$bdd = new PDO('mysql:host=127.0.0.1;dbname=espace_membre', 'ryad', 'ryad');
  
 if(isset($_SESSION['id'])) {
    $requser = $bdd->prepare("SELECT * FROM membre WHERE id = ?");
@@ -56,7 +56,7 @@ if(isset($_SESSION['id'])) {
                <li><a href="connexion.php">Compte</a></li>
                
             </ul>
-           <a href="index2.php"><img src=".\images\panier.png" alt="image2" width="26px"></a>
+            <img src=".\images\panier.png" alt="image2" width="26px">
          </nav>
          
       

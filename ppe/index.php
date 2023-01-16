@@ -25,12 +25,12 @@
 	   			
 	   			<li><a href="">A propos</a></li>
 	   			
-	   			<li><a href="contact.php">Contact</a></li>
+	   			<li><a href="">Contact</a></li>
 	   			
 	   			<li><a href="connexion.php">Compte</a></li>
 	   			
 	   		</ul>
-	   		 <a href="panier.php"><img src=".\images\panier.png" alt="image2" width="26px"></a>
+	   		<img src=".\images\panier.png" alt="image2" width="26px">
 	   	</nav>
 	   	
 	   
@@ -109,47 +109,47 @@
 		<h2>Derniers produits</h2>
 		<div class="row">
 			<div class="col3">
-				<img src="images/dproduit1.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
+				<img src="images/Volet_aluminium_motorisé.jpg" alt="dernierprod">
+				<h3>Volet en aluminium motorisé</h3>
+				<p>1500 $</p>
 			</div>
 			<div class="col3">
-				<img src="images/dproduit2.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
+				<img src="images/fenetre-de-toit_Velux.jpg" alt="dernierprod">
+				<h3>Fenêtre de toit en velux</h3>
+				<p>1000 $</p>
 			</div>
 			<div class="col3">
-				<img src="images/dproduit3.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
+				<img src="images/Porte de garage.jpg" alt="dernierprod">
+				<h3>Porte de garage</h3>
+				<p>930$</p>
 			</div>
 			<div class="col3">
-				<img src="images/dproduit4.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
+				<img src="images/Portes placard platine et noir.jpg" alt="dernierprod">
+				<h3>Portes placard platine et noir</h3>
+				<p>299 $</p>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col3">
-				<img src="images/dproduit1.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
+				<img src="images/Porte battante.jpg" alt="dernierprod">
+				<h3>Porte battante</h3>
+				<p>450 $</p>
 			</div>
 			<div class="col3">
-				<img src="images/dproduit2.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
+				<img src="images/Ensembles composés.jpg" alt="dernierprod">
+				<h3>Ensembles composés</h3>
+				<p>2500$</p>
 			</div>
 			<div class="col3">
-				<img src="images/dproduit3.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
+				<img src="images/Brise soleil.jpg" alt="dernierprod">
+				<h3>Brise soleil</h3>
+				<p>500 $</p>
 			</div>
 			<div class="col3">
-				<img src="images/dproduit4.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
+				<img src="images/Porte d'entrée Contemporaine.jpg" alt="dernierprod">
+				<h3>Porte d'entrée Contemporaine</h3>
+				<p>1200 $</p>
 			</div>
 		</div>
 		</div>
