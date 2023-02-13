@@ -14,7 +14,7 @@
 
           <li><a href="index.php">Accueil</a></li>
           
-          <li><a href="">Produits</a></li>
+          <li><a href="index.php">Produits</a></li>
           
           <li><a href="">A propos</a></li>
           

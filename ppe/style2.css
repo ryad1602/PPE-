@@ -186,3 +186,12 @@ tr {
     color: #37a6ff;
     padding: 10px;
 }
+
+.totall th {
+    border: 0;
+    float: right;
+    font-weight: 500;
+    color: #37a6ff;
+    padding: 10px;
+
+}

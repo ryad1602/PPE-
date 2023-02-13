@@ -1,159 +1,150 @@
+<?php 
+ session_start() ;
+ require_once("controleur/controleur.class.php");
+ $unControleur = new Controleur(); 
+?>
+<?php 
+//connexion à la base de données
+$con = mysqli_connect("localhost","root","","espace_membre");
+//verifier la connexion
+
+if(!$con) 
+		die('Erreur : '.mysqli_connect_error());
+
+
+
+?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ALLU-ME</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-	<section class="header-section">
-		
-	
-	<div class="container">
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ALLU-ME</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section class="header-section">
+        
+    
+    <div class="container">
 
-	<header class="navbar">
-	   <div class="logo">
-	   	<img src=".\images\allume.png" alt="allumelogo">
-	   	</div>
-	   	<nav>
-	   		<ul>
+    <header class="navbar">
+       <div class="logo">
+        <img src=".\images\allume.png" alt="allumelogo">
+        </div>
+        <nav>
+            <ul>
 
-	   			<li><a href="">Accueil</a></li>
-	   			
-	   			<li><a href="">Produits</a></li>
-	   			
-	   			<li><a href="">A propos</a></li>
-	   			
-	   			<li><a href="contact.php">Contact</a></li>
-	   			
-	   			<li><a href="connexion.php">Compte</a></li>
-	   			
-	   		</ul>
-	   		 <a href="panier.php"><img src=".\images\panier.png" alt="image2" width="26px"></a>
-	   	</nav>
-	   	
-	   
-	</header>
+                <li><a href="index.php">Accueil</a></li>
+                
+                <li><a href="index.php">Produits</a></li>
+                
+                <li><a href="">A propos</a></li>
+                
+                <li><a href="contact.php">Contact</a></li>
 
-	<div class="row"> 
+                <?php if(!isset($_SESSION['id']))
+                {
+                	?>
+                
+                <li><a href="connexion.php">Compte</a></li>
 
-		<div class="col1">
-			<h1>Imaginez vos fenêtres et menuiseries adaptées à votre intérieur !</h1>
-			<p>Choisissez les caractéristiques de vos fenêtres et menuiseries <br>jusqu’à la couleur extérieure de l’aluminium et la finition intérieure du bois.</p>
-			<a href="">Explorer Maintenant</a>
-		</div>
+                 <?php }
+                 else
+                 {
 
-		<div class="col1">
-			<img src=".\images\acc.jpg "alt="image1">
-		</div>
+                	?>
+                    <li><a href="profil.php?id=<?=$_SESSION['id']?>">Profil</a></li>
 
-	</div>
+                	<?php 
+                 }
+
+                	?>
+                
+            </ul>
+             <a href="panier.php"><img src=".\images\panier.png" alt="image2" width="26px"></a>
+        </nav>
+        
+       
+    </header>
+
+    <div class="row"> 
+
+        <div class="col1">
+            <h1>Imaginez vos fenêtres et menuiseries adaptées à votre intérieur !</h1>
+            <p>Choisissez les caractéristiques de vos fenêtres et menuiseries <br>jusqu’à la couleur extérieure de l’aluminium et la finition intérieure du bois.</p>
+            <a href="">Explorer Maintenant</a>
+        </div>
+
+        <div class="col1">
+            <img src=".\images\acc.jpg "alt="image1">
+        </div>
+
+    </div>
 
 
 
 
 
 
-	</div>
-	</section>
+    </div>
+    </section>
 
+    <section class="categories">
+        <div class="container">
+            <h2>Top catégories</h2>
+            <div class="row">
+        <div class="col2">
+            <img src=".\images\porte.jpg">
+        </div>
+        <div class="col2">
+            <img src=".\images\vitre.jpg">
+        </div>
+        <div class="col2">
+            <img src=".\images\he.jpg">
+        </div>
+        </div>
+        </div>
+    </section>
 
-	<section class="categories">
-		<div class="container">
-			<h2>Top catégories</h2>
-			<div class="row">
-		<div class="col2">
-			<img src=".\images\porte.jpg">
-		</div>
-		<div class="col2">
-			<img src=".\images\vitre.jpg">
-		</div>
-		<div class="col2">
-			<img src=".\images\he.jpg">
-		</div>
-		</div>
-		</div>
-	</section>
+    <section class="meilleurs-produits">
+        <div class="container">
+        <h2>Meilleurs produits</h2>
+        </div>
 
-	<section class="meilleurs-produits">
-		<div class="container">
-		<h2>Meilleurs produits</h2>
-		<div class="row">
-			<div class="col3">
-				<img src=".\images\porte2.jpg" alt="meilleurprod">
-				<h3>Porte d'entrée aluminium</h3>
-				<p>750 $</p>
-			</div>
-			<div class="col3">
-				<img src="images/baie.jpg" alt="meilleurprod">
-				<h3>Baie coulissante </h3>
-				<p>4500 $</p>
-			</div>
-			<div class="col3">
-				<img src="images/baie2.jpg" alt="meilleurprod">
-				<h3>Porte-fenêtre coulissante </h3>
-				<p>376 $</p>
-			</div>
-			<div class="col3">
-				<img src="images/porte3.jpg" alt="meilleurprod">
-				<h3>Porte coulissante d'intérieur - Bois Blanc</h3>
-				<p>500 $</p>
-			</div>
-		</div>
-		</div>
-	</section>
+    <!-- afficher le nombre de produit dans le panier -->
+      <section class="products_list">
+        <?php 
+        //inclure la page de connexion
+        //afficher la liste des produits
+         $req = mysqli_query($con, "SELECT * FROM `products`");
+      
+         while($row = mysqli_fetch_assoc($req)){ 
+        ?>
+        <form action="" class="product">
 
-	<section class="derniers-produits">
-		<div class="container">
-		<h2>Derniers produits</h2>
-		<div class="row">
-			<div class="col3">
-				<img src="images/dproduit1.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
-			</div>
-			<div class="col3">
-				<img src="images/dproduit2.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
-			</div>
-			<div class="col3">
-				<img src="images/dproduit3.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
-			</div>
-			<div class="col3">
-				<img src="images/dproduit4.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
-			</div>
-		</div>
+            <div class="image_product">
+                <img src="images/<?=$row['img']?>">
+            </div>
+            <div class="content">
+                <h4 class="name"><?=$row['name']?></h4>
+                <h2 class="price"><?=$row['price']?>€</h2>
+                <a href="ajouter_panier.php?id=<?=$row['id']?>" class="id_product">Ajouter au panier</a>
+            </div>
+        </form>
 
-		<div class="row">
-			<div class="col3">
-				<img src="images/dproduit1.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
-			</div>
-			<div class="col3">
-				<img src="images/dproduit2.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
-			</div>
-			<div class="col3">
-				<img src="images/dproduit3.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
-			</div>
-			<div class="col3">
-				<img src="images/dproduit4.jpg" alt="dernierprod">
-				<h3>(Nom produit)</h3>
-				<p>5000 $</p>
-			</div>
-		</div>
-		</div>
-	</section>
-
+        <?php } ?>
+       
+    </section>
 </body>
 </html>

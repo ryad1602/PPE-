@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans:wght@300;400&family=Poppins:ital,wght@0,200;0,300;0,400;1,300;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+
+    width: 145px;
+
+}
+
+nav ul li:hover ul {
+    display: block; /* affiche le menu déroulant lorsque la souris passe sur "Produits" */
+    font-family: 'Lato', sans-serif; /*Change la police pour Lato*/
+    text-align: left; /*aligne le menu déroulant à gauche */
+}
+
+nav ul li ul li a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 400; /* change le poids de la police*/
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+} 
+
+nav ul li a{
+    text-decoration: none;
+    color: #555;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label [type="pseudo"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
