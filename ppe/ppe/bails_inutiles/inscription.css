@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans:wght@300;400&family=Poppins:ital,wght@0,200;0,300;0,400;1,300;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+
+    width: 145px;
+
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+} 
+
+nav ul li a{
+    text-decoration: none;
+    color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.inscription form {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inscription h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.inscription label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.inscription input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.inscription input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.inscription input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.inscription table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.inscription td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
